@@ -2,27 +2,7 @@
 
 # Introduction and Goals {#section-introduction-and-goals}
 
-What is CIS2? 
-
--    CIS2 is a course management system for universities
--    CIS2 tackles the student side, the lecturers side as well as the administration side of things
--    The goals of CIS2 will be to reduce work overhead and simplify the work needed to run a university
-
-Essential features
-
--    
-Describes the relevant requirements and the driving forces that software
-architects and development team must consider. These include
-
--   underlying business goals,
-
--   essential features,
-
--   essential functional requirements,
-
--   quality goals for the architecture and
-
--   relevant stakeholders and their expectations
+CIS2 is a university management system. The goal of which will be to reduce work overhead for every participant in the university life. 
 
 ## Requirements Overview {#_requirements_overview}
 
