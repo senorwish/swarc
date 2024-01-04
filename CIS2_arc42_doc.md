@@ -83,34 +83,25 @@ For CIS2 the following quality goals have been chosen:
 
 # Architecture Constraints {#section-architecture-constraints}
 
-::: formalpara-title
-**Contents**
-:::
-
-Any requirement that constraints software architects in their freedom of
-design and implementation decisions or decision about the development
-process. These constraints sometimes go beyond individual systems and
-are valid for whole organizations and companies.
-
-::: formalpara-title
-**Motivation**
-:::
-
-Architects should know exactly where they are free in their design
-decisions and where they must adhere to constraints. Constraints must
-always be dealt with; they may be negotiable, though.
-
-::: formalpara-title
-**Form**
-:::
-
-Simple tables of constraints with explanations. If needed you can
-subdivide them into technical constraints, organizational and political
-constraints and conventions (e.g. programming or versioning guidelines,
-documentation or naming conventions)
-
-See [Architecture Constraints](https://docs.arc42.org/section-2/) in the
-arc42 documentation.
+| Subdivision    | Constraint                          | Explanation                                                                           |
+|----------------|-------------------------------------|---------------------------------------------------------------------------------------|
+| Technical      | Web-based   Application             | The   system must be accessible online as a web-based platform.                       |
+| Technical      | Modern Web   Technologies           | Must use   technologies such as React, Node.js, and MongoDB for development.          |
+| Technical      | Cloud Hosting   (AWS or Azure)      | The   application should be hosted on a scalable and secure cloud platform.           |
+| Technical      | Data Security   and Encryption      | Must comply   with data protection laws and ensure user data is secure.               |
+| Technical      | Integration   with Existing Systems | The system   must be able to integrate seamlessly with current university systems.    |
+| Organisational | Budget Limits                       | The project is   constrained by the available budget for development and maintenance. |
+| Organisational | Staffing and   Expertise            | Availability   of skilled personnel to develop, deploy, and maintain the system.      |
+| Organisational | Timeline and   Deadlines            | The system   must be developed and deployed within a set timeframe.                   |
+| Organisational | Compliance   with Regulations       | Must adhere to   educational, privacy, and data protection regulations.               |
+| Organisational | Stakeholder   Buy-In                | The system   must meet the needs and gain approval from key stakeholders.             |
+| Political      | University   Policies               | Must align   with the broader policies and strategic objectives of the university.    |
+| Political      | Vendor Lock-in   Avoidance          | Preference for   solutions that don't overly depend on a single vendor.               |
+| Political      | Interdepartmental   Coordination    | Must   facilitate and not hinder interdepartmental communication and processes.       |
+| Convention     | Programming   Guidelines            | Adherence to   specific coding standards and practices for development.               |
+| Convention     | Documentation   Standards           | Comprehensive   documentation must be maintained for all aspects of the system.       |
+| Convention     | Versioning   Guidelines             | Systematic   approach to version control for software and documentation.              |
+| Convention     | Naming   Conventions                | Consistent and   clear naming for system components, files, and documentation.        |
 
 # System Scope and Context {#section-system-scope-and-context}
 
