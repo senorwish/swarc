@@ -45,6 +45,7 @@ A Use Case document has already been provided in the specification of this proje
 ::: formalpara-title
 **Contents**
 :::
+
 For CIS2 the following quality goals have been chosen: 
 
 - Usability
