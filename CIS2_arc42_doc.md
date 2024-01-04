@@ -54,16 +54,6 @@ For CIS2 the following quality goals have been chosen:
 - Security and Privacy
 - Performance
 
-
-::: formalpara-title
-**Motivation**
-:::
-
-You should know the quality goals of your most important stakeholders,
-since they will influence fundamental architectural decisions. Make sure
-to be very concrete about these qualities, avoid buzzwords. If you as an
-architect do not know how the quality of your work will be judged...
-
 ::: formalpara-title
 **Form**
 :::
@@ -76,18 +66,15 @@ architect do not know how the quality of your work will be judged...
 **Contents**
 :::
 
-Explicit overview of stakeholders of the system, i.e. all person, roles
-or organizations that
+-  **John Smith**, University Administrator: Responsible for the overall management and operational decisions within the university, including the use and implementation of the management application.
 
--   should know the architecture
+- **Jane Doe**, Senior Lecturer: As a faculty member, she is directly involved in academic aspects like course delivery, curriculum planning, and utilizing the system for academic management.
 
--   have to be convinced of the architecture
+- **Michael Lee**, Chief Information Officer: Overseeing the technological infrastructure of the university, including the deployment, security, and maintenance of the University Management Application.
 
--   have to work with the architecture or with code
+- **Emily Chen**, Student Representative: Representing the student body's interests and needs in regards to how the application affects student life, including enrollment, course management, and access to academic resources.
 
--   need the documentation of the architecture for their work
-
--   have to come up with decisions about the system or its development
+- **Sarah Johnson**, Financial Officer: Managing the financial aspects related to the application, including billing, payments, and budgeting for the system's implementation and upkeep.
 
 ::: formalpara-title
 **Motivation**
