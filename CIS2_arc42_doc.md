@@ -42,29 +42,18 @@ A Use Case document has already been provided in the specification of this proje
 
 ## Quality Goals {#_quality_goals}
 
-::: formalpara-title
-**Contents**
-:::
-
 For CIS2 the following quality goals have been chosen: 
 
-- Usability
-- Reliability
-- Scalability
-- Security and Privacy
-- Performance
-
-::: formalpara-title
-**Form**
-:::
-
-![table_quality](https://github.com/senorwish/swarc/blob/main/images/Screenshot%202024-01-04%20at%2014.55.10.png?raw=true)
+| Priority | Quality Goal         | Concrete   Scenario                                                                                                                                                                        |
+|----------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1        | Usability            | A   new student can log in, navigate, and enroll in courses within their first   visit, without needing to refer to a manual or seek help.                                                 |
+| 2        | Reliability          | During   peak registration times, the system maintains its performance and   availability, handling the increased load without crashing or significant   slowdowns.                        |
+| 3        | Security and Privacy | A   breach attempt is detected, and the system securely encrypts sensitive data   while alerting administrators to the attempt, preventing unauthorized access.                            |
+| 4        | Scalability          | As   the university expands its courses and student numbers each year, the system   accommodates the increased data and user load without degradation in   performance or user experience. |
+| 5        | Performance          | Faculty   members access and input grades for a large class, and the changes are   reflected in real-time, with the system handling the data-intensive operation   smoothly.               |
 
 ## Stakeholders {#_stakeholders}
 
-::: formalpara-title
-**Contents**
-:::
 
 -  **John Smith**, University Administrator: Responsible for the overall management and operational decisions within the university, including the use and implementation of the management application.
 
