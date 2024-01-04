@@ -45,17 +45,14 @@ A Use Case document has already been provided in the specification of this proje
 ::: formalpara-title
 **Contents**
 :::
+For CIS2 the following quality goals have been chosen: 
 
-The top three (max five) quality goals for the architecture whose
-fulfillment is of highest importance to the major stakeholders. We
-really mean quality goals for the architecture. Don't confuse them with
-project goals. They are not necessarily identical.
+- Usability
+- Reliability
+- Scalability
+- Security and Privacy
+- Performance
 
-Consider this overview of potential topics (based upon the ISO 25010
-standard):
-
-![Categories of Quality
-Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
 
 ::: formalpara-title
 **Motivation**
