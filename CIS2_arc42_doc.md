@@ -68,37 +68,18 @@ For CIS2 the following quality goals have been chosen:
 
 -  **John Smith**, University Administrator: Responsible for the overall management and operational decisions within the university, including the use and implementation of the management application.
 
+
 - **Jane Doe**, Senior Lecturer: As a faculty member, she is directly involved in academic aspects like course delivery, curriculum planning, and utilizing the system for academic management.
+
 
 - **Michael Lee**, Chief Information Officer: Overseeing the technological infrastructure of the university, including the deployment, security, and maintenance of the University Management Application.
 
+
 - **Emily Chen**, Student Representative: Representing the student body's interests and needs in regards to how the application affects student life, including enrollment, course management, and access to academic resources.
+
 
 - **Sarah Johnson**, Financial Officer: Managing the financial aspects related to the application, including billing, payments, and budgeting for the system's implementation and upkeep.
 
-::: formalpara-title
-**Motivation**
-:::
-
-You should know all parties involved in development of the system or
-affected by the system. Otherwise, you may get nasty surprises later in
-the development process. These stakeholders determine the extent and the
-level of detail of your work and its results.
-
-::: formalpara-title
-**Form**
-:::
-
-Table with role names, person names, and their expectations with respect
-to the architecture and its documentation.
-
-+-------------+---------------------------+---------------------------+
-| Role/Name   | Contact                   | Expectations              |
-+=============+===========================+===========================+
-| *\<Role-1>* | *\<Contact-1>*            | *\<Expectation-1>*        |
-+-------------+---------------------------+---------------------------+
-| *\<Role-2>* | *\<Contact-2>*            | *\<Expectation-2>*        |
-+-------------+---------------------------+---------------------------+
 
 # Architecture Constraints {#section-architecture-constraints}
 
