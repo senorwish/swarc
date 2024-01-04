@@ -10,10 +10,23 @@ CIS2 is a university management system. The goal of which will be to reduce work
 **Contents**
 :::
 
-Short description of the functional requirements, driving forces,
-extract (or abstract) of requirements. Link to (hopefully existing)
-requirements documents (with version number and information where to
-find it).
+The following functional requirements have been set by the stakeholders:
+
+- Student Enrollment: Enabling students to register for courses, with the system handling eligibility checks and enrollment confirmations.
+- Attendance Tracking: Allowing faculty to record student attendance for each class session.
+- Grades Management: Faculty can input and manage grades, and students can access their academic records.
+- Billing and Payments: Processing student payments for tuition and fees, and managing financial records.
+- Course Management: Facilitating faculty in creating and updating course details.
+- Reporting and Analytics: Generating reports on enrollment, grades, attendance, and financials for administrative use.
+- User Authentication: Ensuring that all users are authorized to access the system according to their roles.
+
+Furthermore, the system is propelled by the following driving forces: 
+
+- Efficiency: Automating processes to save time.
+- Accessibility: Providing easy access to information and services for students and faculty on different devices.
+- Compliance: Adhering to security standards and privacy regulations.
+- Scalability: Being capable of handling increased load as the university grows.
+- User Engagement: Ensuring the interface is intuitive and meets the users needs.
 
 ::: formalpara-title
 **Motivation**
