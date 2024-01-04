@@ -32,22 +32,13 @@ Furthermore, the system is propelled by the following driving forces:
 **Motivation**
 :::
 
-From the point of view of the end users a system is created or modified
-to improve support of a business activity and/or improve the quality.
+In summary, from an end-user standpoint, the system development should focus on enhancing the efficiency and quality of all activities, with a strong emphasis on usability, accessibility, and personalization, all while maintaining high standards of security and privacy.
 
 ::: formalpara-title
 **Form**
 :::
 
-Short textual description, probably in tabular use-case format. If
-requirements documents exist this overview should refer to these
-documents.
-
-Keep these excerpts as short as possible. Balance readability of this
-document with potential redundancy w.r.t to requirements documents.
-
-See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
-arc42 documentation.
+A Use Case document has already been provided in the specification of this project. (see: https://github.com/marvkos/swarc-material/blob/main/materials/university%20managment/use%20case%20document.md)
 
 ## Quality Goals {#_quality_goals}
 
