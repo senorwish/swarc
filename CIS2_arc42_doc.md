@@ -68,7 +68,7 @@ architect do not know how the quality of your work will be judged...
 **Form**
 :::
 
-A table with quality goals and concrete scenarios, ordered by priorities
+![table_quality](https://github.com/senorwish/swarc/blob/main/images/Screenshot%202024-01-04%20at%2014.55.10.png?raw=true)
 
 ## Stakeholders {#_stakeholders}
 
