@@ -6,9 +6,6 @@ CIS2 is a university management system. The goal of which will be to reduce work
 
 ## Requirements Overview {#_requirements_overview}
 
-::: formalpara-title
-**Contents**
-:::
 
 The following functional requirements have been set by the stakeholders:
 
@@ -28,15 +25,6 @@ Furthermore, the system is propelled by the following driving forces:
 - Scalability: Being capable of handling increased load as the university grows.
 - User Engagement: Ensuring the interface is intuitive and meets the users needs.
 
-::: formalpara-title
-**Motivation**
-:::
-
-In summary, from an end-user standpoint, the system development should focus on enhancing the efficiency and quality of all activities, with a strong emphasis on usability, accessibility, and personalization, all while maintaining high standards of security and privacy.
-
-::: formalpara-title
-**Form**
-:::
 
 A Use Case document has already been provided in the specification of this project. (see: https://github.com/marvkos/swarc-material/blob/main/materials/university%20managment/use%20case%20document.md)
 
@@ -94,9 +82,6 @@ For CIS2 the following quality goals have been chosen:
 
 # System Scope and Context {#section-system-scope-and-context}
 
-::: formalpara-title
-**Contents**
-:::
 
 - Student Management: Enrollment, personal data management, academic history.
 - Course Management: Scheduling, curriculum updates, materials distribution.
@@ -119,36 +104,14 @@ For CIS2 the following quality goals have been chosen:
 
 ## Technical Context {#_technical_context}
 
-::: formalpara-title
-**Contents**
-:::
-
-Technical interfaces (channels and transmission media) linking your
-system to its environment. In addition a mapping of domain specific
-input/output to the channels, i.e. an explanation which I/O uses which
-channel.
-
-::: formalpara-title
-**Motivation**
-:::
-
-Many stakeholders make architectural decision based on the technical
-interfaces between the system and its context. Especially infrastructure
-or hardware designers decide these technical interfaces.
-
-::: formalpara-title
-**Form**
-:::
-
-E.g. UML deployment diagram describing channels to neighboring systems,
-together with a mapping table showing the relationships between channels
-and input/output.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of technical interfaces>**
-
-**\<Mapping Input/Output to Channels>**
+|      Channel/Interface      |        Transmission Media       |                                                                 Domain Specific I/O                                                                 |                                                                 Explanation                                                                |                  Protocols/Formats                 |
+|:---------------------------:|:-------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------:|
+| Web Portal                  | HTTPS                | - Student course selections, personal data, assignment submissions<br>- Faculty course content, grades<br>- Administrative reports, student records | The web portal is the primary interface for students, faculty, and staff. It uses HTTPS for secure transmission of data over the internet. | HTTPS, educational data standards (e.g., PESC XML) |
+| Email System                | SMTP, IMAP/POP       | - Notifications to students, faculty, and staff<br>- Administrative communication                                                                   | Used for sending out notifications and communications related to enrollment, grades, assignments, and administrative matters.              | HTTPS, RESTful APIs, Database protocols            |
+| API Integration             | HTTPS                | - Data exchange with external educational partners<br>- System integration with other university IT systems                                         | APIs allow for secure data exchange between the system and external/internal systems for course data, enrollment, and more.                | Database protocols, secure file transfer           |
+| Database Access             | TCP/IP               | - Storage and retrieval of all system data                                                                                                          | The database is accessed through the intranet using TCP/IP for all operations related to storing and retrieving data.                      | Network protocols, encryption standards            |
+| Mobile Application          | HTTPS                | - Mobile access to schedules, grades, course materials                                                                                              | The mobile app allows students and faculty to access system features on-the-go. It uses HTTPS to secure data transmission.                 | Specific regulatory data exchange formats          |
+| File Transfer (for updates) | FTP/SFTP | - System updates, patches<br>- Upload of bulk data like course materials, student records                                                           | Secure file transfer is used by IT staff for system updates or by administrative staff for uploading large sets of data into the system.   | Educational data exchange standards, APIs          |
 
 # Solution Strategy {#section-solution-strategy}
 
