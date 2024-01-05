@@ -98,67 +98,24 @@ For CIS2 the following quality goals have been chosen:
 **Contents**
 :::
 
-System scope and context - as the name suggests - delimits your system
-(i.e. your scope) from all its communication partners (neighboring
-systems and users, i.e. the context of your system). It thereby
-specifies the external interfaces.
-
-If necessary, differentiate the business context (domain specific inputs
-and outputs) from the technical context (channels, protocols, hardware).
-
-::: formalpara-title
-**Motivation**
-:::
-
-The domain interfaces and technical interfaces to communication partners
-are among your system's most critical aspects. Make sure that you
-completely understand them.
-
-::: formalpara-title
-**Form**
-:::
-
-Various options:
-
--   Context diagrams
-
--   Lists of communication partners and their interfaces.
-
-See [Context and Scope](https://docs.arc42.org/section-3/) in the arc42
-documentation.
+- Student Management: Enrollment, personal data management, academic history.
+- Course Management: Scheduling, curriculum updates, materials distribution.
+- Faculty Management: Staff records, schedules, workload management.
+- Attendance Management: Daily attendance recording, statistics, reports.
+- Grades Management: Grade recording, transcript management, assessments.
+- Billing and Payment Management: Fee calculations, payment processing, financial aid.
+- Reporting and Analytics: Generation of reports for academic and administrative use.
 
 ## Business Context {#_business_context}
 
-::: formalpara-title
-**Contents**
-:::
-
-Specification of **all** communication partners (users, IT-systems, ...)
-with explanations of domain specific inputs and outputs or interfaces.
-Optionally you can add domain specific formats or communication
-protocols.
-
-::: formalpara-title
-**Motivation**
-:::
-
-All stakeholders should understand which data are exchanged with the
-environment of the system.
-
-::: formalpara-title
-**Form**
-:::
-
-All kinds of diagrams that show the system as a black box and specify
-the domain interfaces to communication partners.
-
-Alternatively (or additionally) you can use a table. The title of the
-table is the name of your system, the three columns contain the name of
-the communication partner, the inputs, and the outputs.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of external domain interfaces>**
+|     Communication Partner     |                               Inputs                               |                               Outputs                              |                 Interfaces                 |                  Protocols/Formats                 |   |
+|:-----------------------------:|:------------------------------------------------------------------:|:------------------------------------------------------------------:|:------------------------------------------:|:--------------------------------------------------:|---|
+| Students                      | Course selections, personal data, assignment submissions, feedback | Course materials, schedules, grades, billing information           | Web portal, mobile app                     | HTTPS, educational data standards (e.g., PESC XML) |   |
+| Faculty Members               | Course content, grades, attendance records, feedback               | Schedule updates, administrative reports, student performance data | Faculty portal, academic databases         | HTTPS, RESTful APIs, Database protocols            |   |
+| Administrative Staff          | Student records, course information, financial data                | Enrollment reports, financial reports, compliance reports          | Administrative dashboard                   | Database protocols, secure file transfer           |   |
+| IT Staff                      | System updates, security patches, user feedback                    | System status reports, performance metrics                         | IT management tools                        | Network protocols, encryption standards            |   |
+| Regulatory Bodies             | Compliance requests                                                | Compliance data, reports                                           | Secure data exchange portal                | Specific regulatory data exchange formats          |   |
+| External Educational Partners | Course data, enrollment information                                | Joint program details, transfer credit information                 | Partner portals, data interchange services | Educational data exchange standards, APIs          |   |
 
 ## Technical Context {#_technical_context}
 
