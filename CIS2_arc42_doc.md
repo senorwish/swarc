@@ -115,43 +115,31 @@ For CIS2 the following quality goals have been chosen:
 
 # Solution Strategy {#section-solution-strategy}
 
-::: formalpara-title
-**Contents**
-:::
+**Technology Decisions:**
 
-A short summary and explanation of the fundamental decisions and
-solution strategies, that shape system architecture. It includes
+- Web-based Application: Chosen for its accessibility and ease of maintenance. Technologies like React for the frontend, Node.js for the backend, and MongoDB for the database are selected for their performance, scalability, and community support.
+- Cloud Hosting (AWS or Azure): Ensures scalability, reliability, and security. Cloud services are selected for their robust infrastructure and wide range of services.
+- Secure Communication Protocols (HTTPS, SFTP, etc.): To ensure data security during transmission.
 
--   technology decisions
+**Top-level Decomposition:**
 
--   decisions about the top-level decomposition of the system, e.g.
-    usage of an architectural pattern or design pattern
+- Microservices: The system is decomposed into loosely coupled, independently deployable microservices. This approach enhances scalability and allows for more manageable updates and maintenance.
+- SSO for Authentication: A centralized authentication mechanism that improves user experience and security.
+- Modular User Interface: Separating the user interface into modules corresponding to user roles (students, faculty, admin) for better usability and maintainability.
 
--   decisions on how to achieve key quality goals
+**Achieving Key Quality Goals:**
 
--   relevant organizational decisions, e.g. selecting a development
-    process or delegating certain tasks to third parties.
+- Usability: Adoption of user-centered design principles in the UI/UX, ensuring the system is intuitive and meets the needs of all users.
+- Reliability and Availability: Implementation of failover strategies, regular backups, and robust error handling in the cloud environment.
+- Security: Integration of comprehensive security measures, including data encryption, regular security audits, and adherence to privacy regulations.
+- Performance: Use of caching, load balancing, and efficient database queries to ensure the system performs well under load.
 
-::: formalpara-title
-**Motivation**
-:::
+**Organizational Decisions:**
 
-These decisions form the cornerstones for your architecture. They are
-the foundation for many other detailed decisions or implementation
-rules.
+- Agile Development: Adopting an agile methodology for iterative development, allowing for flexibility and continuous improvement.
+- Third-Party Integrations: Deciding on strategic partnerships for features like payment gateways, email services, or library databases to enhance functionality without developing every component in-house.
+- CI/CD: Implementing CI/CD pipelines for regular, automated testing and deployment to reduce errors and streamline updates.
 
-::: formalpara-title
-**Form**
-:::
-
-Keep the explanations of such key decisions short.
-
-Motivate what was decided and why it was decided that way, based upon
-problem statement, quality goals and key constraints. Refer to details
-in the following sections.
-
-See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
-documentation.
 
 # Building Block View {#section-building-block-view}
 
