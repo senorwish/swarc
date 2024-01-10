@@ -169,95 +169,42 @@ For CIS2 the following quality goals have been chosen:
 
 # Cross-cutting Concepts {#section-concepts}
 
-::: formalpara-title
-**Content**
-:::
+In documenting cross-cutting concepts for the University Management System, we aim to establish a set of overarching principles and guidelines that ensure consistency and homogeneity across the entire architecture. These concepts form the backbone of the system's design and implementation, impacting multiple components and layers. Here's an outline structured around the suggested categories:
+Domain Concepts:
 
-This section describes overall, principal regulations and solution ideas
-that are relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks. They can
-include many different topics, such as
+- Domain Model: A unified and consistent domain model that defines the core entities such as students, faculty, courses, and grades, as well as their relationships, which is shared across all components.
+- Business Rules: Clear definitions of business logic, such as enrollment prerequisites, grading policies, and billing cycles, that are centrally managed and applied consistently across the system.
 
--   models, especially domain models
+**User Experience Concepts (UX):**
 
--   architecture or design patterns
+- Design System: A standardized UI design system with reusable components, color schemes, and interaction patterns ensuring a cohesive user experience.
+- Accessibility Standards: Adherence to WCAG guidelines to ensure the system is usable by all users, including those with disabilities.
 
--   rules for using specific technology
+**Safety and Security Concepts:**
 
--   principal, often technical decisions of an overarching (=
-    cross-cutting) nature
+- Authentication and Authorization: A robust security framework ensuring secure access controls and data protection.
+- Data Encryption: All sensitive data, both at rest and in transit, is encrypted using industry-standard protocols.
+- Audit Trails: Implementing logging mechanisms to track system usage and changes, important for security audits and troubleshooting.
 
--   implementation rules
+**Architecture and Design Patterns:**
 
-::: formalpara-title
-**Motivation**
-:::
+- Microservices Architecture: Decoupling the system into microservices to enhance scalability, maintainability, and deployment flexibility.
+- API Gateway Pattern: A single entry point for all client requests, providing an additional layer of abstraction and security.
 
-Concepts form the basis for *conceptual integrity* (consistency,
-homogeneity) of the architecture. Thus, they are an important
-contribution to achieve inner qualities of your system.
+**Under-the-hood:**
 
-Some of these concepts cannot be assigned to individual building blocks,
-e.g. security or safety.
+- Database Abstraction: Utilizing ORM (Object-Relational Mapping) tools like Hibernate for database interactions to decouple the application logic from the database engine.
+- Error Handling: A global error handling strategy for gracefully managing exceptions and providing clear, actionable feedback to users.
 
-::: formalpara-title
-**Form**
-:::
+**Development Concepts:**
 
-The form can be varied:
+- Code Standards: Enforcing coding standards and reviews to maintain code quality.
+- Continuous Integration/Continuous Deployment (CI/CD): Implementing CI/CD pipelines for automated testing and deployment.
 
--   concept papers with any kind of structure
+**Operational Concepts:**
 
--   cross-cutting model excerpts or scenarios using notations of the
-    architecture views
-
--   sample implementations, especially for technical concepts
-
--   reference to typical usage of standard frameworks (e.g. using
-    Hibernate for object/relational mapping)
-
-::: formalpara-title
-**Structure**
-:::
-
-A potential (but not mandatory) structure for this section could be:
-
--   Domain concepts
-
--   User Experience concepts (UX)
-
--   Safety and security concepts
-
--   Architecture and design patterns
-
--   \"Under-the-hood\"
-
--   development concepts
-
--   operational concepts
-
-Note: it might be difficult to assign individual concepts to one
-specific topic on this list.
-
-![Possible topics for crosscutting
-concepts](images/08-Crosscutting-Concepts-Structure-EN.png)
-
-See [Concepts](https://docs.arc42.org/section-8/) in the arc42
-documentation.
-
-## *\<Concept 1>* {#__emphasis_concept_1_emphasis}
-
-*\<explanation>*
-
-## *\<Concept 2>* {#__emphasis_concept_2_emphasis}
-
-*\<explanation>*
-
-...
-
-## *\<Concept n>* {#__emphasis_concept_n_emphasis}
-
-*\<explanation>*
+- Monitoring and Logging: System-wide monitoring and logging to ensure operational health and quick resolution of issues.
+- Disaster Recovery: Strategies like regular backups and failover mechanisms to ensure business continuity.
 
 # Architecture Decisions {#section-design-decisions}
 
