@@ -257,34 +257,32 @@ Disaster Recovery
 
 # Risks and Technical Debts {#section-technical-risks}
 
-::: formalpara-title
-**Contents**
-:::
+System Downtime During Critical Operations:
+- Risk of system outages during peak times such as registration or grading periods.
 
-A list of identified technical risks or technical debts, ordered by
-priority
+Data Breach and Security Vulnerabilities:
+- Potential exposure of sensitive student and faculty data due to security weaknesses.
 
-::: formalpara-title
-**Motivation**
-:::
+Integration with Legacy Systems:
+- Challenges and potential failures in integrating with outdated university systems.
 
-"Risk management is project management for grown-ups" (Tim Lister,
-Atlantic Systems Guild.)
+Scalability Concerns:
+- Risk that the system may not handle a rapid increase in user base or data volume.
 
-This should be your motto for systematic detection and evaluation of
-risks and technical debts in the architecture, which will be needed by
-management stakeholders (e.g. project managers, product owners) as part
-of the overall risk analysis and measurement planning.
+Compliance with Data Protection Regulations:
+- The possibility of incurring legal penalties due to non-compliance with regulations like GDPR or FERPA.
 
-::: formalpara-title
-**Form**
-:::
+Technical Debt from Rapid Development:
+- Accumulation of quick fixes and workarounds during aggressive development timelines leading to unstable code.
 
-List of risks and/or technical debts, probably including suggested
-measures to minimize, mitigate or avoid risks or reduce technical debts.
+Vendor Lock-in with Cloud Providers:
+- Dependence on specific cloud services that may limit future infrastructure choices.
 
-See [Risks and Technical Debt](https://docs.arc42.org/section-11/) in
-the arc42 documentation.
+Performance Bottlenecks:
+- Unoptimized queries or inefficient code that could slow down the system.
+
+User Interface Inconsistency:
+- Disparate user interface elements leading to a confusing user experience.
 
 # Glossary {#section-glossary}
 
@@ -292,33 +290,3 @@ the arc42 documentation.
 **Contents**
 :::
 
-The most important domain and technical terms that your stakeholders use
-when discussing the system.
-
-You can also see the glossary as source for translations if you work in
-multi-language teams.
-
-::: formalpara-title
-**Motivation**
-:::
-
-You should clearly define your terms, so that all stakeholders
-
--   have an identical understanding of these terms
-
--   do not use synonyms and homonyms
-
-A table with columns \<Term> and \<Definition>.
-
-Potentially more columns in case you need translations.
-
-See [Glossary](https://docs.arc42.org/section-12/) in the arc42
-documentation.
-
-+-----------------------+-----------------------------------------------+
-| Term                  | Definition                                    |
-+=======================+===============================================+
-| *\<Term-1>*           | *\<definition-1>*                             |
-+-----------------------+-----------------------------------------------+
-| *\<Term-2>*           | *\<definition-2>*                             |
-+-----------------------+-----------------------------------------------+
