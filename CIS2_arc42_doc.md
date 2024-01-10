@@ -208,142 +208,52 @@ Domain Concepts:
 
 # Architecture Decisions {#section-design-decisions}
 
-::: formalpara-title
-**Contents**
-:::
+**Adopting Microservices Architecture**
 
-Important, expensive, large scale or risky architecture decisions
-including rationales. With \"decisions\" we mean selecting one
-alternative based on given criteria.
+- Rationale: The decision to adopt a microservices architecture was driven by the need for scalability and flexibility. It allows individual teams to develop, deploy, and scale their services independently, improving the system's responsiveness to changing requirements.
+- Consequences: This decision introduces complexity in deployment and orchestration, necessitating a robust infrastructure and DevOps expertise.
 
-Please use your judgement to decide whether an architectural decision
-should be documented here in this central section or whether you better
-document it locally (e.g. within the white box template of one building
-block).
+**Cloud Hosting with AWS/Azure**
 
-Avoid redundancy. Refer to section 4, where you already captured the
-most important decisions of your architecture.
-
-::: formalpara-title
-**Motivation**
-:::
-
-Stakeholders of your system should be able to comprehend and retrace
-your decisions.
-
-::: formalpara-title
-**Form**
-:::
-
-Various options:
-
--   ADR ([Documenting Architecture
-    Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions))
-    for every important decision
-
--   List or table, ordered by importance and consequences or:
-
--   more detailed in form of separate sections per decision
-
-See [Architecture Decisions](https://docs.arc42.org/section-9/) in the
-arc42 documentation. There you will find links and examples about ADR.
+- Rationale: Using cloud services like AWS or Azure provides scalability, high availability, and a range of services that can be leveraged for different needs. It also transfers some of the infrastructure security responsibilities to the cloud provider.
+- Consequences: This decision leads to potential vendor lock-in and requires careful management of costs associated with cloud services.
 
 # Quality Requirements {#section-quality-scenarios}
 
-::: formalpara-title
-**Content**
-:::
+**High-Priority Quality Goals**
 
-This section contains all quality requirements as quality tree with
-scenarios. The most important ones have already been described in
-section 1.2. (quality goals)
+Usability
+- Scenario: A student should be able to register for courses with no more than three clicks from the dashboard.
 
-Here you can also capture quality requirements with lesser priority,
-which will not create high risks when they are not fully achieved.
+Reliability
+- Scenario: The system must have an uptime of 99.9% during registration periods.
 
-::: formalpara-title
-**Motivation**
-:::
+Performance
+- Scenario: The system should load any student's grade book within two seconds under normal load conditions.
 
-Since quality requirements will have a lot of influence on architectural
-decisions you should know for every stakeholder what is really important
-to them, concrete and measurable.
+Security
+- Scenario: Personal student data must be encrypted in transit and at rest, and the system should withstand common security attacks like SQL injection and XSS.
 
-See [Quality Requirements](https://docs.arc42.org/section-10/) in the
-arc42 documentation.
+Scalability
+- Scenario: The system should support a tenfold increase in simultaneous user connections without degradation of performance.
 
-## Quality Tree {#_quality_tree}
+**Lower-Priority Quality Goals**
 
-::: formalpara-title
-**Content**
-:::
+Maintainability
+- Scenario: Developers should be able to implement a new feature or address a bug within a standardized time frame.
 
-The quality tree (as defined in ATAM -- Architecture Tradeoff Analysis
-Method) with quality/evaluation scenarios as leafs.
+Compatibility
+- Scenario: The system should be compatible with the two latest versions of major web browsers like Chrome, Firefox, and Safari.
 
-::: formalpara-title
-**Motivation**
-:::
+Interoperability
+- Scenario: The system should be able to exchange data with existing university systems using standardized data formats such as CSV or JSON.
 
-The tree structure with priorities provides an overview for a sometimes
-large number of quality requirements.
+Testability
+- Scenario: The system should have automated tests covering at least 80% of the codebase, ensuring key functionalities work as expected after changes.
 
-::: formalpara-title
-**Form**
-:::
+Disaster Recovery
+- Scenario: In the event of a critical system failure, the system should be able to fully recover within four hours.
 
-The quality tree is a high-level overview of the quality goals and
-requirements:
-
--   tree-like refinement of the term \"quality\". Use \"quality\" or
-    \"usefulness\" as a root
-
--   a mind map with quality categories as main branches
-
-In any case the tree should include links to the scenarios of the
-following section.
-
-## Quality Scenarios {#_quality_scenarios}
-
-::: formalpara-title
-**Contents**
-:::
-
-Concretization of (sometimes vague or implicit) quality requirements
-using (quality) scenarios.
-
-These scenarios describe what should happen when a stimulus arrives at
-the system.
-
-For architects, two kinds of scenarios are important:
-
--   Usage scenarios (also called application scenarios or use case
-    scenarios) describe the system's runtime reaction to a certain
-    stimulus. This also includes scenarios that describe the system's
-    efficiency or performance. Example: The system reacts to a user's
-    request within one second.
-
--   Change scenarios describe a modification of the system or of its
-    immediate environment. Example: Additional functionality is
-    implemented or requirements for a quality attribute change.
-
-::: formalpara-title
-**Motivation**
-:::
-
-Scenarios make quality requirements concrete and allow to more easily
-measure or decide whether they are fulfilled.
-
-Especially when you want to assess your architecture using methods like
-ATAM you need to describe your quality goals (from section 1.2) more
-precisely down to a level of scenarios that can be discussed and
-evaluated.
-
-::: formalpara-title
-**Form**
-:::
-
-Tabular or free form text.
 
 # Risks and Technical Debts {#section-technical-risks}
 
