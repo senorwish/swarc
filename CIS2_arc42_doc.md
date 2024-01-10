@@ -160,6 +160,7 @@ For CIS2 the following quality goals have been chosen:
 
 ## \<Grade a student as a teacher> {#__runtime_scenario_2}
 
+![get_grades_runtime](https://github.com/senorwish/swarc/blob/main/images/give_grade.png?raw=true)
 
 
 # Deployment View {#section-deployment-view}
