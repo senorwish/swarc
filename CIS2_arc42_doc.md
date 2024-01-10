@@ -156,7 +156,7 @@ For CIS2 the following quality goals have been chosen:
 
 ## \<View Grades as a student> {#__runtime_scenario_1}
 
-
+![get_grades_runtime](https://github.com/senorwish/swarc/blob/main/images/get_grades.drawio.png?raw=true)
 
 ## \<Grade a student as a teacher> {#__runtime_scenario_2}
 
