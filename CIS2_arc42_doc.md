@@ -123,19 +123,19 @@ As specified in the specification, the following persons represent the stakehold
 
 - Microservices: The system and its components will be decomposed into loosely coupled and independently deployable microservices. This helps manage updates und maintanance and will also help scalability of the system.
 - SSO for Authentication: A centralized authentication mechanism that improves user experience and security.
-- Modular User Interface: Separating the user interface into modules corresponding to user roles (students, faculty, admin) for better usability and maintainability.
+- Modular User Interface: Separating the user interface into modules corresponding to user roles (for example students, faculty, administative personell will have a different overview) for better usability and maintainability.
 
 **Achieving Key Quality Goals:**
 
 - Usability: Adoption of user-centered design principles in the UI/UX, ensuring the system is intuitive and meets the needs of all users.
 - Reliability and Availability: Implementation of failover strategies, regular backups, and robust error handling in the cloud environment.
 - Security: Integration of comprehensive security measures, including data encryption, regular security audits, and adherence to privacy regulations.
-- Performance: Use of caching, load balancing, and efficient database queries to ensure the system performs well under load.
+- Performance: The use of caching, loadbalancing and well written database queries will ensure a good performance and speed even under load.
 
 **Organizational Decisions:**
 
 - Agile Development: Adopting an agile methodology for iterative development, allowing for flexibility and continuous improvement.
-- Third-Party Integrations: Deciding on strategic partnerships for features like payment gateways, email services, or library databases to enhance functionality without developing every component in-house.
+- Third-Party Integrations: For the payment service Klarna will be used. For email services Microsoft Outlook will be used.
 - CI/CD: Implementing CI/CD pipelines for regular, automated testing and deployment to reduce errors and streamline updates.
 
 
