@@ -63,23 +63,20 @@ As specified in the specification, the following persons represent the stakehold
 
 | Subdivision    | Constraint                          | Explanation                                                                           |
 |----------------|-------------------------------------|---------------------------------------------------------------------------------------|
-| Technical      | Web-based   Application             | The   system must be accessible online as a web-based platform.                       |
-| Technical      | Modern Web   Technologies           | Must use   technologies such as React, Node.js, and MongoDB for development.          |
-| Technical      | Cloud Hosting   (AWS or Azure)      | The   application should be hosted on a scalable and secure cloud platform.           |
-| Technical      | Data Security   and Encryption      | Must comply   with data protection laws and ensure user data is secure.               |
-| Technical      | Integration   with Existing Systems | The system   must be able to integrate seamlessly with current university systems.    |
-| Organisational | Budget Limits                       | The project is   constrained by the available budget for development and maintenance. |
-| Organisational | Staffing and   Expertise            | Availability   of skilled personnel to develop, deploy, and maintain the system.      |
-| Organisational | Timeline and   Deadlines            | The system   must be developed and deployed within a set timeframe.                   |
-| Organisational | Compliance   with Regulations       | Must adhere to   educational, privacy, and data protection regulations.               |
-| Organisational | Stakeholder   Buy-In                | The system   must meet the needs and gain approval from key stakeholders.             |
-| Political      | University   Policies               | Must align   with the broader policies and strategic objectives of the university.    |
-| Political      | Vendor Lock-in   Avoidance          | Preference for   solutions that don't overly depend on a single vendor.               |
-| Political      | Interdepartmental   Coordination    | Must   facilitate and not hinder interdepartmental communication and processes.       |
-| Convention     | Programming   Guidelines            | Adherence to   specific coding standards and practices for development.               |
-| Convention     | Documentation   Standards           | Comprehensive   documentation must be maintained for all aspects of the system.       |
-| Convention     | Versioning   Guidelines             | Systematic   approach to version control for software and documentation.              |
-| Convention     | Naming   Conventions                | Consistent and   clear naming for system components, files, and documentation.        |
+| Technical      | Web-based              | The   system must be accessible online as a web-based platform in all common browsers such as Chrome, Firefox and Safari (yes, Microsoft Edge too).                       |
+| Technical      | Modern Web   Technologies           | Must use technologies such as React, Node.js, and MongoDB for development to stay technically relevant.          |
+| Technical      | Cloud Hosting   (AWS or Azure)      | The   application should be hosted on a scalable and secure cloud platform. This is to ensure that the application can be dynamically scaled as the university grows.           |
+| Technical      | Data Security   and Encryption      | Must comply with data protection laws, security guidlines and other relevant regulations regarding the security of the system and its data.       |
+| Technical      | Integration   with Existing Systems | The system must be able to integrate seamlessly with current university systems. See old.reddit as an example.|
+| Organisational | Budget Limits                       | The project is constrained by the available budget for development and maintenance. |
+| Organisational | Staffing and   Expertise            | Availability of skilled personnel to develop, deploy, and maintain the system.      |
+| Organisational | Deadlines            | The system must be developed and deployed within a set timeframe. The prefered launchdate is during either summer or winter break.                   |
+| Organisational | Compliance with Regulations       | Must adhere to  educational, privacy, and data protection regulations.               |
+| Organisational | Stakeholder   Approval             | The system must meet the needs and gain approval from key stakeholders. An example of this could be the integration of a desired payment service by the Sarah Johnson, the finanical officer.             |
+| Political      | Vendor Lock-in   Avoidance          | Preference for   solutions that don't overly depend on a single vendor. The system has to be able to adapt to different vendors.               |
+| Convention     | Documentation   Standards           | Comprehensive  documentation must be maintained for all aspects of the system to ensure circulation of information regarding the system and its build.       |
+| Convention     | Versioning   Guidelines             | Systematic approach to version control for software and documentation using git.             |
+| Convention     | Naming   Conventions                | Consistent and  clear naming for variables, system components, files, and documentation.        |
 
 # System Scope and Context {#section-system-scope-and-context}
 
