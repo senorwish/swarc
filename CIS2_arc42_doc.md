@@ -9,20 +9,20 @@ CIS2 is a university management system. The goal of which will be to reduce work
 
 The following functional requirements have been set by the stakeholders:
 
-- Student Enrollment: Enabling students to register for courses, with the system handling eligibility checks and enrollment confirmations.
-- Attendance Tracking: Allowing faculty to record student attendance for each class session.
-- Grades Management: Faculty can input and manage grades, and students can access their academic records.
-- Billing and Payments: Processing student payments for tuition and fees, and managing financial records.
-- Course Management: Facilitating faculty in creating and updating course details.
-- Reporting and Analytics: Generating reports on enrollment, grades, attendance, and financials for administrative use.
+- Student Enrollment: This requirement is about enabling the students to register for courses. The system will also handel eligibility checks.
+- Attendance Tracking: The faculty has to be able to record the students attendance for each class session.
+- Grades Management: Faculty can input and manage grades which the students can then access in their academic records.
+- Billing and Payments: The administration has to be able to issue invoices to the students which the students will then have to able to pay.
+- Course Management: Faculity members have to be able to create, update and maintain courses and their details.
+- Reporting and Analytics: Generating reports on enrollment, grades, attendance, and financials for the administration of the university.
 - User Authentication: Ensuring that all users are authorized to access the system according to their roles.
 
 Furthermore, the system is propelled by the following driving forces: 
 
 - Efficiency: Automating processes to save time.
-- Accessibility: Providing easy access to information and services for students and faculty on different devices.
-- Compliance: Adhering to security standards and privacy regulations.
-- Scalability: Being capable of handling increased load as the university grows.
+- Accessibility: Providing easy access to information and services for students and faculty on many different devices.
+- Compliance: Adhering to security standards and privacy regulations. CIS2 will adhere to relevant security standards and privacy regulations such as the DSGVO. As a research institute CIS2 will also have to adhere to the upcoming NIS2 regulation.
+- Scalability: As the university grows, the system has to be capable to handle an increased traffic and data load.
 - User Engagement: Ensuring the interface is intuitive and meets the users needs.
 
 
@@ -30,7 +30,7 @@ A Use Case document has already been provided in the specification of this proje
 
 ## Quality Goals {#_quality_goals}
 
-For CIS2 the following quality goals have been chosen: 
+For CIS2 the following quality goals have been chosen and ranked by priority: 
 
 | Priority | Quality Goal         | Concrete   Scenario                                                                                                                                                                        |
 |----------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -42,20 +42,21 @@ For CIS2 the following quality goals have been chosen:
 
 ## Stakeholders {#_stakeholders}
 
+As specified in the specification, the following persons represent the stakeholders in CIS2: 
 
--  **John Smith**, University Administrator: Responsible for the overall management and operational decisions within the university, including the use and implementation of the management application.
-
-
-- **Jane Doe**, Senior Lecturer: As a faculty member, she is directly involved in academic aspects like course delivery, curriculum planning, and utilizing the system for academic management.
+-  **John Smith**, University Administrator: He is responsible for the management and operational decisions within the university. He is also responsible for the use and implementation of the management application. 
 
 
-- **Michael Lee**, Chief Information Officer: Overseeing the technological infrastructure of the university, including the deployment, security, and maintenance of the University Management Application.
+- **Jane Doe**, Senior Lecturer: Jane represents the faculty members and is therefore directly involved in the academic aspects of CIS2 including the course delivery, the curriculum planning and utilizing the system for academic use.
 
 
-- **Emily Chen**, Student Representative: Representing the student body's interests and needs in regards to how the application affects student life, including enrollment, course management, and access to academic resources.
+- **Michael Lee**, Chief Information Officer: As the CIO, Michael is overseeing the whole technological infrastructure of the university. This also includes the security, deployment and maintanance of CIS2. He is an important stakeholder when deciding on the technological aspects of CIS2
 
 
-- **Sarah Johnson**, Financial Officer: Managing the financial aspects related to the application, including billing, payments, and budgeting for the system's implementation and upkeep.
+- **Emily Chen**, Student Representative: Emily Chen is a student and will therefore represent the students interests and needs. As a stakeholder she will be the contact person for anything regarting the student life, enrollment process and resource management.
+
+
+- **Sarah Johnson**, Financial Officer: He is making the financial decisions in the university and is therefore the stakeholder responsible for the billing and payment processes. 
 
 
 # Architecture Constraints {#section-architecture-constraints}
