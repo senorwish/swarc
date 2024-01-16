@@ -34,10 +34,10 @@ For CIS2 the following quality goals have been chosen and ranked by priority:
 
 | Priority | Quality Goal         | Concrete   Scenario                                                                                                                                                                        |
 |----------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1        | Usability            | A   new student can log in, navigate, and enroll in courses within their first   visit, without needing to refer to a manual or seek help.                                                 |
-| 2        | Reliability          | During   peak registration times, the system maintains its performance and   availability, handling the increased load without crashing or significant   slowdowns.                        |
-| 3        | Security and Privacy | A   breach attempt is detected, and the system securely encrypts sensitive data   while alerting administrators to the attempt, preventing unauthorized access.                            |
-| 4        | Scalability          | As   the university expands its courses and student numbers each year, the system   accommodates the increased data and user load without degradation in   performance or user experience. |
+| 1        | Usability            | When a student enters the university, he can log in, navigate and enroll in courses and check his grades and outstanding bills without the need to refer to a manual or seek help from other students.                                               |
+| 2        | Reliability          | The system is up and running even during peak registration times. It also maintains its performance and availability during this increased load without crashing or significant slowdowns.                      |
+| 3        | Security and Privacy | Attempts to breach the system will be detected and forwarded to be further analysed. the system also security encrypts sensitive data in accordance to relevant laws and standards.                       |
+| 4        | Scalability          | CIS2 will not lack performance or user experience even as the university natually expands its courses and the number of students each year grows. |
 | 5        | Performance          | Faculty   members access and input grades for a large class, and the changes are   reflected in real-time, with the system handling the data-intensive operation   smoothly.               |
 
 ## Stakeholders {#_stakeholders}
