@@ -38,7 +38,7 @@ For CIS2 the following quality goals have been chosen and ranked by priority:
 | 2        | Reliability          | The system is up and running even during peak registration times. It also maintains its performance and availability during this increased load without crashing or significant slowdowns.                      |
 | 3        | Security and Privacy | Attempts to breach the system will be detected and forwarded to be further analysed. the system also security encrypts sensitive data in accordance to relevant laws and standards.                       |
 | 4        | Scalability          | CIS2 will not lack performance or user experience even as the university natually expands its courses and the number of students each year grows. |
-| 5        | Performance          | Faculty   members access and input grades for a large class, and the changes are   reflected in real-time, with the system handling the data-intensive operation   smoothly.               |
+| 5        | Performance          | Faculty   members access and input grades for a large class, and the changes are   reflected in real-time. The system handels these operations smoothly and fast.              |
 
 ## Stakeholders {#_stakeholders}
 
