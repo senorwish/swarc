@@ -93,12 +93,11 @@ As specified in the specification, the following persons represent the stakehold
 
 |     Communication Partner     |                               Inputs                               |                               Outputs                              |                 Interfaces                 |                  Protocols/Formats                 |   |
 |:-----------------------------:|:------------------------------------------------------------------:|:------------------------------------------------------------------:|:------------------------------------------:|:--------------------------------------------------:|---|
-| Students                      | Course selections, personal data, assignment submissions, feedback | Course materials, schedules, grades, billing information           | Web portal, mobile app                     | HTTPS, educational data standards (e.g., PESC XML) |   |
-| Faculty Members               | Course content, grades, attendance records, feedback               | Schedule updates, administrative reports, student performance data | Faculty portal, academic databases         | HTTPS, RESTful APIs, Database protocols            |   |
-| Administrative Staff          | Student records, course information, financial data                | Enrollment reports, financial reports, compliance reports          | Administrative dashboard                   | Database protocols, secure file transfer           |   |
-| IT Staff                      | System updates, security patches, user feedback                    | System status reports, performance metrics                         | IT management tools                        | Network protocols, encryption standards            |   |
-| Regulatory Bodies             | Compliance requests                                                | Compliance data, reports                                           | Secure data exchange portal                | Specific regulatory data exchange formats          |   |
-| External Educational Partners | Course data, enrollment information                                | Joint program details, transfer credit information                 | Partner portals, data interchange services | Educational data exchange standards, APIs          |   |
+| Students                      | Course selections, personal data, assignment submissions, maybe feedback | Course materials, schedules, grades, billing information and invoices           | Web portal                     | HTTPS, FTP |   |
+| Faculty Members               | Course contents, grades, attendance records               | Schedules, administrative reports,  | Faculty portal, academic databases         | HTTPS, RESTful APIs, Database protocols            |   |
+| Administrative Staff          | Student records, financial data                | Enrollment reports, financial reports         | Administrative dashboard                   | Database protocols, FTP           |   |
+| IT Staff                      | System updates, security patches                    | System status reports, performance metrics                         | IT management tools                        | Network protocols, encryption standards            |   |
+| External Educational Partners | Course data, enrollment information                                | Joint program details, transfer credit information                 | Partner portals, data interchange services |  APIs          |   |
 
 ## Technical Context {#_technical_context}
 
@@ -116,13 +115,13 @@ As specified in the specification, the following persons represent the stakehold
 
 **Technology Decisions:**
 
-- Web-based Application: Chosen for its accessibility and ease of maintenance. Technologies like React for the frontend, Node.js for the backend, and MongoDB for the database are selected for their performance, scalability, and community support.
-- Cloud Hosting (AWS or Azure): Ensures scalability, reliability, and security. Cloud services are selected for their robust infrastructure and wide range of services.
+- Web-based Application: CIS2 will be composed as a Web-Based Application with React as the frontend technology and Node.js for the backend. These have been chosen for their performance, scalability and community support. For the databse, MongoDB has been chosen for its good usability with large data.
+- Cloud Hosting (AWS or Azure): The development team has chosen to host the Webapplication with cloud services (either AWS or Azure) This ensures scalability, reliability, and security. Cloud services are selected for their robust infrastructure and wide range of services.
 - Secure Communication Protocols (HTTPS, SFTP, etc.): To ensure data security during transmission.
 
 **Top-level Decomposition:**
 
-- Microservices: The system is decomposed into loosely coupled, independently deployable microservices. This approach enhances scalability and allows for more manageable updates and maintenance.
+- Microservices: The system and its components will be decomposed into loosely coupled and independently deployable microservices. This helps manage updates und maintanance and will also help scalability of the system.
 - SSO for Authentication: A centralized authentication mechanism that improves user experience and security.
 - Modular User Interface: Separating the user interface into modules corresponding to user roles (students, faculty, admin) for better usability and maintainability.
 
