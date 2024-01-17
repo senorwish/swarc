@@ -141,14 +141,7 @@ As specified in the specification, the following persons represent the stakehold
 
 # Building Block View {#section-building-block-view}
 
-
-## Whitebox Overall System {#_whitebox_overall_system}
-
-## Level 2 {#_level_2}
-
-## Level 3 {#_level_3}
-
-
+![get_grades_runtime](https://github.com/senorwish/swarc/blob/main/images/Building%20Block%20View.drawio.png?raw=true)
 
 # Runtime View {#section-runtime-view}
 
