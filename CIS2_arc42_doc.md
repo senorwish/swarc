@@ -201,15 +201,41 @@ In this chapter, we will document concepts and technologies which can be used in
 
 # Architecture Decisions {#section-design-decisions}
 
-**Adopting Microservices Architecture**
+**ADR 1: Adoption of Microservices Architecture**
 
-- Rationale: The decision to adopt a microservices architecture was driven by the need for scalability and flexibility. It allows individual teams to develop, deploy, and scale their services independently, improving the system's responsiveness to changing requirements.
-- Consequences: This decision introduces complexity in deployment and orchestration, necessitating a robust infrastructure and DevOps expertise.
+    Status: Accepted
+    Decision: Implement the system using a microservices architecture.
+    Context: The need for scalability and flexibility in managing diverse university functions.
+    Consequences: Higher complexity in deployment and orchestration but improved scalability and independent service management.
 
-**Cloud Hosting with AWS/Azure**
+**ADR 2: Cloud Hosting with AWS/Azure**
 
-- Rationale: Using cloud services like AWS or Azure provides scalability, high availability, and a range of services that can be leveraged for different needs. It also transfers some of the infrastructure security responsibilities to the cloud provider.
-- Consequences: This decision leads to potential vendor lock-in and requires careful management of costs associated with cloud services.
+    Status: Accepted
+    Decision: Host the system on AWS/Azure cloud services.
+    Context: Requirement for high availability, scalability, and advanced cloud services.
+    Consequences: Potential vendor lock-in and variable costs, but gains in reliability and scalability.
+
+**ADR 3: Use of React for Frontend Development**
+
+    Status: Accepted
+    Decision: Use React framework for frontend development.
+    Context: The need for a robust, scalable, and maintainable frontend solution.
+    Consequences: Requirement for React-specific skills in the development team but enhanced user experience and development efficiency.
+
+**ADR 4: Centralized Authentication Service**
+
+    Status: Accepted
+    Decision: Implement a centralized authentication service using OAuth and JWTs.
+    Context: The necessity for a consistent and secure authentication mechanism across all services.
+    Consequences: Centralized management of security but requires robust implementation to prevent security vulnerabilities.
+
+**ADR 5: NoSQL Database Adoption**
+
+    Status: Accepted
+    Decision: Use a NoSQL database (MongoDB) for data storage.
+    Context: Need for flexibility in handling diverse and evolving data schemas.
+    Consequences: Limited ability for complex transactions and queries but increased scalability and flexibility in data management.
+
 
 # Quality Requirements {#section-quality-scenarios}
 
