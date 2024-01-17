@@ -274,35 +274,23 @@ Disaster Recovery
 # Risks and Technical Debts {#section-technical-risks}
 
 System Downtime During Critical Operations:
-- Risk of system outages during peak times such as registration or grading periods.
+- Risk of system downtime during peak times such as registration periods.
 
 Data Breach and Security Vulnerabilities:
-- Potential exposure of sensitive student and faculty data due to security weaknesses.
+- Potential leackage of sensitive student and faculty data due to security vulnerabilities.
 
-Integration with Legacy Systems:
-- Challenges and potential failures in integrating with outdated university systems.
+Integration with previous Systems:
+- Challenges and potential failures in integrating the new system with the outdated university systems.
 
 Scalability Concerns:
 - Risk that the system may not handle a rapid increase in user base or data volume.
 
-Compliance with Data Protection Regulations:
-- The possibility of incurring legal penalties due to non-compliance with regulations like GDPR or FERPA.
-
 Technical Debt from Rapid Development:
-- Accumulation of quick fixes and workarounds during aggressive development timelines leading to unstable code.
+- Quick fixes and sloppy workarounds during stressing development times leading to bad and unstable code.
 
 Vendor Lock-in with Cloud Providers:
-- Dependence on specific cloud services that may limit future infrastructure choices.
+- Dependence on specific cloud services may limit future infrastructure choices.
 
 Performance Bottlenecks:
-- Unoptimized queries or inefficient code that could slow down the system.
-
-User Interface Inconsistency:
-- Disparate user interface elements leading to a confusing user experience.
-
-# Glossary {#section-glossary}
-
-::: formalpara-title
-**Contents**
-:::
+- Unefficient database queries could slow down the system.
 
