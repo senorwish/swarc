@@ -201,40 +201,40 @@ In this chapter, we will document concepts and technologies which can be used in
 
 # Architecture Decisions {#section-design-decisions}
 
-**ADR 1: Adoption of Microservices Architecture**
+**ADR 1: Use of Microservices Architecture**
 
-    Status: Accepted
-    Decision: Implement the system using a microservices architecture.
-    Context: The need for scalability and flexibility in managing diverse university functions.
-    Consequences: Higher complexity in deployment and orchestration but improved scalability and independent service management.
+- Status: Accepted
+- Decision: Implement the system using a microservices architecture.
+- Context: The need for scalability and flexibility in managing diverse university functions. CIS2 needs to be scaleable und flexible in      managing the diverse university functions.
+- Consequences: Higher complexity in deployment and orchestration but better scalability and independent service management. 
 
 **ADR 2: Cloud Hosting with AWS/Azure**
 
-    Status: Accepted
-    Decision: Host the system on AWS/Azure cloud services.
-    Context: Requirement for high availability, scalability, and advanced cloud services.
-    Consequences: Potential vendor lock-in and variable costs, but gains in reliability and scalability.
+- Status: Accepted
+- Decision: Host the system on AWS/Azure cloud services.
+- Context: Requirement for high availability and scalability.
+- Consequences: Potential vendor lock-in and variable costs, but gains in reliability and scalability.
 
 **ADR 3: Use of React for Frontend Development**
 
-    Status: Accepted
-    Decision: Use React framework for frontend development.
-    Context: The need for a robust, scalable, and maintainable frontend solution.
-    Consequences: Requirement for React-specific skills in the development team but enhanced user experience and development efficiency.
+- Status: Accepted
+- Decision: Use React framework for frontend development.
+- Context: The need for a robust, scalable, and maintainable frontend solution.
+- Consequences: Requirement for developers with React skills in the development team.
 
 **ADR 4: Centralized Authentication Service**
 
-    Status: Accepted
-    Decision: Implement a centralized authentication service using OAuth and JWTs.
-    Context: The necessity for a consistent and secure authentication mechanism across all services.
-    Consequences: Centralized management of security but requires robust implementation to prevent security vulnerabilities.
+- Status: Accepted
+- Decision: Implement a centralized authentication service using auth0. 
+- Context: The necessity for a consistent and secure authentication mechanism across all services.
+- Consequences: Centralized management of security but requires good implementation to prevent security vulnerabilities.
 
-**ADR 5: NoSQL Database Adoption**
+**ADR 5: NoSQL Database**
 
-    Status: Accepted
-    Decision: Use a NoSQL database (MongoDB) for data storage.
-    Context: Need for flexibility in handling diverse and evolving data schemas.
-    Consequences: Limited ability for complex transactions and queries but increased scalability and flexibility in data management.
+- Status: Accepted
+- Decision: Use a NoSQL database (MongoDB) for data storage.
+- Context: Need for flexibility in handling diverse and evolving data schemas.
+- Consequences: Limited ability for complex transactions and queries but increased scalability and flexibility in data management.
 
 
 # Quality Requirements {#section-quality-scenarios}
@@ -242,19 +242,19 @@ In this chapter, we will document concepts and technologies which can be used in
 **High-Priority Quality Goals**
 
 Usability
-- Scenario: A student should be able to register for courses with no more than three clicks from the dashboard.
+- Scenario: A student should be able to register for courses with no more than three clicks from the dashboard (Course-Overview -> Course Details -> Enroll). 
 
 Reliability
-- Scenario: The system must have an uptime of 99.9% during registration periods.
+- Scenario: The system must have an uptime of 99.9% during the semester. Downtime can only occure during summer or winter break. 
 
 Performance
-- Scenario: The system should load any student's grade book within two seconds under normal load conditions.
+- Scenario: The system should load any grades of the students within two seconds under normal load conditions.
 
 Security
-- Scenario: Personal student data must be encrypted in transit and at rest, and the system should withstand common security attacks like SQL injection and XSS.
+- Scenario: Sensitive student data must be encrypted. Furthermore the system should withstand commong cybersecurity attacks like SQL Injections.
 
 Scalability
-- Scenario: The system should support a tenfold increase in simultaneous user connections without degradation of performance.
+- Scenario: The system should support a x10 increase in simulated user connections without loss of performance.
 
 **Lower-Priority Quality Goals**
 
@@ -262,10 +262,7 @@ Maintainability
 - Scenario: Developers should be able to implement a new feature or address a bug within a standardized time frame.
 
 Compatibility
-- Scenario: The system should be compatible with the two latest versions of major web browsers like Chrome, Firefox, and Safari.
-
-Interoperability
-- Scenario: The system should be able to exchange data with existing university systems using standardized data formats such as CSV or JSON.
+- Scenario: The system should be compatible with the latest versions of commong web browsers like Chrome, Firefox, and Safari.
 
 Testability
 - Scenario: The system should have automated tests covering at least 80% of the codebase, ensuring key functionalities work as expected after changes.
