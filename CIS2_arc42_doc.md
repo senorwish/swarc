@@ -167,32 +167,28 @@ As specified in the specification, the following persons represent the stakehold
 
 # Cross-cutting Concepts {#section-concepts}
 
-In documenting cross-cutting concepts for the University Management System, we aim to establish a set of overarching principles and guidelines that ensure consistency and homogeneity across the entire architecture. These concepts form the backbone of the system's design and implementation, impacting multiple components and layers. Here's an outline structured around the suggested categories:
-Domain Concepts:
-
-- Domain Model: A unified and consistent domain model that defines the core entities such as students, faculty, courses, and grades, as well as their relationships, which is shared across all components.
-- Business Rules: Clear definitions of business logic, such as enrollment prerequisites, grading policies, and billing cycles, that are centrally managed and applied consistently across the system.
+In this chapter, we will document concepts and technologies which can be used in in different components and layers of the system. This helps establish a set of overarching principles and ensures consitency and homogeneity across the entire architecture.
 
 **User Experience Concepts (UX):**
 
-- Design System: A standardized UI design system with reusable components, color schemes, and interaction patterns ensuring a cohesive user experience.
-- Accessibility Standards: Adherence to WCAG guidelines to ensure the system is usable by all users, including those with disabilities.
+- Design System: A standardized UI design system with reusable components, and interaction patterns ensuring a cohesive user experience. 
+- A overarching color scheme. 
 
 **Safety and Security Concepts:**
 
 - Authentication and Authorization: A robust security framework ensuring secure access controls and data protection.
-- Data Encryption: All sensitive data, both at rest and in transit, is encrypted using industry-standard protocols.
-- Audit Trails: Implementing logging mechanisms to track system usage and changes, important for security audits and troubleshooting.
+- Data Encryption: All sensitive data is encrypted while at rest and while beeing sent. The access to this data is handled under the "need-to-know" principle.
+- Audit Trails: Implementing a logging mechanisms which tracks the system usage and changes made. This is important for security audits and troubleshooting.
 
 **Architecture and Design Patterns:**
 
-- Microservices Architecture: Decoupling the system into microservices to enhance scalability, maintainability, and deployment flexibility.
-- API Gateway Pattern: A single entry point for all client requests, providing an additional layer of abstraction and security.
+- Microservices Architecture: Decoupling the system into microservices to help with scalability, maintainability, and deployment flexibility.
+- API Gateway Pattern: A single entry point for all client requests, which provides an additional layer of abstraction and thightens security.
 
 **Under-the-hood:**
 
-- Database Abstraction: Utilizing ORM (Object-Relational Mapping) tools like Hibernate for database interactions to decouple the application logic from the database engine.
-- Error Handling: A global error handling strategy for gracefully managing exceptions and providing clear, actionable feedback to users.
+- Database Abstraction: Utilizing ORM (Object-Relational Mapping) tools like Hibernate for database interactions. This decouples the application logic from the database engine. 
+- Error Handling: A global error handling strategy for gracefully managing exceptions and providing clear, actionable feedback to users. This will be achived using feedback-loops and ticket systems. 
 
 **Development Concepts:**
 
@@ -201,7 +197,6 @@ Domain Concepts:
 
 **Operational Concepts:**
 
-- Monitoring and Logging: System-wide monitoring and logging to ensure operational health and quick resolution of issues.
 - Disaster Recovery: Strategies like regular backups and failover mechanisms to ensure business continuity.
 
 # Architecture Decisions {#section-design-decisions}
