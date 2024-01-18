@@ -64,7 +64,7 @@ As specified in the specification, the following persons represent the stakehold
 | Subdivision    | Constraint                          | Explanation                                                                           |
 |----------------|-------------------------------------|---------------------------------------------------------------------------------------|
 | Technical      | Web-based              | The   system must be accessible online as a web-based platform in all common browsers such as Chrome, Firefox and Safari (yes, Microsoft Edge too).                       |
-| Technical      | Modern Web   Technologies           | Must use technologies such as React, Node.js, and MongoDB for development to stay technically relevant.          |
+| Technical      | Modern Web   Technologies           | Must use technologies such as React, Symfony, and MongoDB for development to stay technically relevant.          |
 | Technical      | Cloud Hosting   (AWS or Azure)      | The   application should be hosted on a scalable and secure cloud platform. This is to ensure that the application can be dynamically scaled as the university grows.           |
 | Technical      | Data Security   and Encryption      | Must comply with data protection laws, security guidlines and other relevant regulations regarding the security of the system and its data.       |
 | Technical      | Integration   with Existing Systems | The system must be able to integrate seamlessly with current university systems. See old.reddit as an example.|
@@ -115,7 +115,7 @@ As specified in the specification, the following persons represent the stakehold
 
 **Technology Decisions:**
 
-- Web-based Application: CIS2 will be composed as a Web-Based Application with React as the frontend technology and Node.js for the backend. These have been chosen for their performance, scalability and community support. For the databse, MongoDB has been chosen for its good usability with large data.
+- Web-based Application: CIS2 will be composed as a Web-Based Application with React as the frontend technology and Symfony for the backend. These have been chosen for their performance, scalability and community support. For the databse, MongoDB has been chosen for its good usability with large data.
 - Cloud Hosting (AWS or Azure): The development team has chosen to host the Webapplication with cloud services (either AWS or Azure) This ensures scalability, reliability, and security. Cloud services are selected for their robust infrastructure and wide range of services.
 - Secure Communication Protocols (HTTPS, SFTP, etc.): To ensure data security during transmission.
 
@@ -211,9 +211,16 @@ In this chapter, we will document concepts and technologies which can be used in
 **ADR 3: Use of React for Frontend Development**
 
 - Status: Accepted
-- Decision: Use React framework for frontend development.
+- Decision: Use React library for frontend development.
 - Context: The need for a robust, scalable, and maintainable frontend solution.
 - Consequences: Requirement for developers with React skills in the development team.
+
+**ADR 3: Use of symfony for Backend Development**
+
+- Status: Accepted
+- Decision: Use symfony framework for backend development.
+- Context: The need for a robust, scalable, and maintainable backend solution.
+- Consequences: Requirement for developers with PHP skills in the development team.
 
 **ADR 4: Centralized Authentication Service**
 
